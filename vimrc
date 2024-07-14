@@ -260,8 +260,7 @@ let mapleader = ","
 imap jj <Esc>
 imap jk <Esc>
 nnoremap <space> :update<CR>
-nmap <leader>nt :NERDTreeToggle<CR> 
-nmap <leader>n :NERDTreeFocus<CR>
+nmap <leader>e :NERDTreeToggle<CR> 
 
 syntax enable
 colorscheme slate
