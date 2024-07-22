@@ -1,4 +1,4 @@
-set nocompatible              " be iMproved, required
+set nocompatible              " be iMproved,required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -42,6 +42,7 @@ Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'SirVer/ultisnips'
 Plugin 'mlaursen/vim-react-snippets'
 Plugin 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+Plugin 'easymotion/vim-easymotion'
 
 
 call vundle#end()            " required
@@ -244,9 +245,15 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
+" for easymotion
+let g:EasyMotion_smartcase = 1
+nmap s <Plug>(easymotion-overwin-f2)
+
+
 "for tpope/surround
-silent! unmap s
-silent! map s s
+"silent! unmap s
+"silent! map s s
+
 "  ================================================================
 " UltiSnips
 " ================================================================
