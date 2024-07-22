@@ -191,6 +191,14 @@ map mc <A-n>
 map mx <A-x>
 map mp <A-p>
 
+" NERDTree
+" =========
+" toggle NERDTree
+ nmap <Leader>e :NERDTreeToggle<CR>
+
+
+
+
 
 
 
